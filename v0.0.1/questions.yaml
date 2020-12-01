@@ -1,0 +1,52 @@
+categories:
+  - Server
+questions:
+
+# Config
+  - variable: config.clusterProvider
+    default: infrastructure
+    description: ''
+    type: enum
+    options:
+      - infrastructure
+      - eks
+      - aks
+      - gke
+    required: true
+    label: 'cluster provider'
+    group: Config
+  - variable: config.imagePullPolicy
+    default: Always
+    description: ''
+    type: enum
+    options:
+      - Always
+      - IfNotPresent
+    required: true
+    label: 'pull policy'
+    group: Config
+  - variable: config.updateStrategy
+    default: Recreate
+    description: ''
+    type: enum
+    options:
+      - Recreate
+      - RollingUpdate
+      - OnDelete
+    required: true
+    label: 'update strategy'
+    group: Config
+  - variable: config.asdasda
+    default: asdaasdasd
+    description: ''
+    type: password
+    required: true
+    label: asdasd
+    group: Config
+  - variable: config.asda
+    default: asd
+    description: ''
+    type: string
+    required: false
+    label: asda
+    group: Config
